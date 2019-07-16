@@ -1,0 +1,13 @@
+/Users/richard.hull/Dotnet/MoviesAPI/bin/Release/netcoreapp2.2/MoviesAPI.deps.json
+/Users/richard.hull/Dotnet/MoviesAPI/bin/Release/netcoreapp2.2/MoviesAPI.runtimeconfig.json
+/Users/richard.hull/Dotnet/MoviesAPI/bin/Release/netcoreapp2.2/MoviesAPI.runtimeconfig.dev.json
+/Users/richard.hull/Dotnet/MoviesAPI/bin/Release/netcoreapp2.2/MoviesAPI.dll
+/Users/richard.hull/Dotnet/MoviesAPI/bin/Release/netcoreapp2.2/MoviesAPI.pdb
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.csproj.CoreCompileInputs.cache
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.RazorAssemblyInfo.cache
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.RazorAssemblyInfo.cs
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.AssemblyInfoInputs.cache
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.AssemblyInfo.cs
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.RazorTargetAssemblyInfo.cache
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.dll
+/Users/richard.hull/Dotnet/MoviesAPI/obj/Release/netcoreapp2.2/MoviesAPI.pdb
