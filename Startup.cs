@@ -3,14 +3,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MoviesAPI.Services;
 using Microsoft.Extensions.Configuration;
-using MoviesAPI.Models;
+using MoviesAPI.Persistence.Contexts;
+using MoviesAPI.Services;
+using MoviesAPI.Persistence.Repositories;
+using MoviesAPI.Domain.Repositories;
+using MoviesAPI.Domain.Services;
 
 namespace MoviesAPI
 {
-     public class Startup
-     {
+    public class Startup
+    {
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -21,12 +24,15 @@ namespace MoviesAPI
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public void ConfigureServices(IServiceCollection services)
-          {
+            {
             services
-                 .AddDbContext<MoviesDbContext>(options =>
-                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                    .AddDbContext<AppDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IMovieService, MovieService>();
 
             services.AddCors(options =>
             {
@@ -37,20 +43,20 @@ namespace MoviesAPI
                 });
             });
         }
-          public void Configure(IApplicationBuilder app,
-               IHostingEnvironment env,
-               MoviesDbContext moviesDbContext)
-          {
-               if (env.IsDevelopment())
-               {
-                    app.UseDeveloperExceptionPage();
-               }
-               app.UseStaticFiles();
-               moviesDbContext.CreateSeedData();
-
+            public void Configure(IApplicationBuilder app,
+                IHostingEnvironment env)
+            {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
             app.UseCors(MyAllowSpecificOrigins);
-
             app.UseMvc();
         }
-     }
+    }
 }

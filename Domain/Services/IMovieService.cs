@@ -1,8 +1,8 @@
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoviesAPI.Models;
+using MoviesAPI.Domain.Models;
 
-namespace MoviesAPI.Services
+namespace MoviesAPI.Domain.Services
 
 {
     public interface IMovieService

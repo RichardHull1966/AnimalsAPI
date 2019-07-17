@@ -2941,5 +2941,11 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "MoviesAPI",
-  "Documents": []
+  "Documents": [
+    {
+      "FilePath": "Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ]
 }

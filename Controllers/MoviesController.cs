@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MoviesAPI.Services;
+using MoviesAPI.Domain.Models;
+using MoviesAPI.Domain.Services;
 
 namespace MoviesAPI.Controllers
 
@@ -8,22 +10,18 @@ namespace MoviesAPI.Controllers
     [Route("api/[controller]")]
     public class MoviesController : Controller
     {
-        private MoviesDbContext _context;
-        public MoviesController(MoviesDbContext context)
+        private readonly IMovieService _movieService;
+
+        public MoviesController(IMovieService movieService)
         {
-            _context = context;
+            _movieService = movieService;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<IEnumerable<Movie>> GetAllAsync()
         {
-            return Ok(_context.Movies);
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "id = " + id;
+            var movies = await _movieService.ListAsync();
+            return movies;
         }
     }
 }

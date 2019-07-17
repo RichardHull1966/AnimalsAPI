@@ -1,10 +1,14 @@
-﻿using System;
+﻿using MoviesAPI.Persistence.Contexts;
+
 namespace MoviesAPI.Persistence.Repositories
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
-        public BaseRepository()
+        protected readonly AppDbContext _context;
+
+        public BaseRepository(AppDbContext context)
         {
+            _context = context;
         }
     }
 }

@@ -1,17 +1,16 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MoviesAPI.Models
+namespace MoviesAPI.Domain.Models
+
 {
      public class Movie
      {
-          [Key]
-          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
           public int Id { get; set; }
-          [Required]
-          [MaxLength(100)]
+
           public string Name { get; set; }
-          [Required]
+
           public int Year { get; set; }
      }
 }
