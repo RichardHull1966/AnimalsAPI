@@ -11,6 +11,6 @@ namespace MoviesAPI.Domain.Models
 
         public string Name { get; set; }
 
-        public int Year { get; set; }
+        public int Age { get; set; }
     }
 }

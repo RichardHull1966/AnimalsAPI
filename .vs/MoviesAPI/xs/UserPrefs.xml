@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{2C608A61-5DF4-4F21-9E19-81490E7CC89A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Models/Movie.cs">
     <Files>
-      <File FileName="appsettings.json" Line="12" Column="1" />
-      <File FileName="Domain/Repositories/IMovieRepository.cs" Line="1" Column="1" />
-      <File FileName="Persistence/Repositories/MovieRepository.cs" />
-      <File FileName="Persistence/Repositories/BaseRepository.cs" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" />
-      <File FileName="Domain/Services/IMovieService.cs" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/Hamster.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/Movie.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +15,9 @@
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
-                <Node name="Models" expanded="True" />
+                <Node name="Models" expanded="True">
+                  <Node name="Movie.cs" selected="True" />
+                </Node>
                 <Node name="Repositories" expanded="True" />
                 <Node name="Services" expanded="True" />
               </Node>
@@ -28,7 +27,6 @@
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
