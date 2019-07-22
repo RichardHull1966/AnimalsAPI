@@ -31,6 +31,9 @@ namespace MoviesAPI
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddScoped<IHamsterRepository, HamsterRepository>();
+            services.AddScoped<IHamsterService, HamsterService>();
+
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IMovieService, MovieService>();
 
@@ -43,7 +46,7 @@ namespace MoviesAPI
                 });
             });
         }
-            public void Configure(IApplicationBuilder app,
+        public void Configure(IApplicationBuilder app,
                 IHostingEnvironment env)
             {
             if (env.IsDevelopment())

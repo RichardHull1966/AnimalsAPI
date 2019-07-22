@@ -1,27 +1,21 @@
 ﻿<Properties StartupConfiguration="{2C608A61-5DF4-4F21-9E19-81490E7CC89A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Domain/Services/IMovieService.cs" Line="10" Column="32" />
-      <File FileName="Controllers/MoviesController.cs" Line="21" Column="44" />
-      <File FileName="Controllers/HomeController.cs" Line="15" Column="1" />
-      <File FileName="Services/MovieService.cs" Line="18" Column="44" />
-      <File FileName="Domain/Repositories/IMovieRepository.cs" Line="11" Column="2" />
-      <File FileName="Startup.cs" Line="38" Column="14" />
-      <File FileName="Persistence/Contexts/AppDbContext.cs" Line="11" Column="86" />
-      <File FileName="Persistence/Repositories/BaseRepository.cs" Line="15" Column="1" />
-      <File FileName="Persistence/Repositories/MovieRepository.cs" Line="16" Column="44" />
-      <File FileName="Domain/Models/Movie.cs" Line="16" Column="2" />
-      <File FileName="Program.cs" Line="1" Column="24" />
-      <File FileName="appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
       <File FileName="appsettings.json" Line="12" Column="1" />
+      <File FileName="Domain/Repositories/IMovieRepository.cs" Line="1" Column="1" />
+      <File FileName="Persistence/Repositories/MovieRepository.cs" />
+      <File FileName="Persistence/Repositories/BaseRepository.cs" />
+      <File FileName="Persistence/Contexts/AppDbContext.cs" />
+      <File FileName="Domain/Services/IMovieService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MoviesAPI" expanded="True">
             <Node name="MoviesAPI" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
@@ -29,19 +23,15 @@
                 <Node name="Services" expanded="True" />
               </Node>
               <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
