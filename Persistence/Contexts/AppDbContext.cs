@@ -5,7 +5,7 @@ namespace AnimalsAPI.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Cat> Cats { get; set; }
         public DbSet<Hamster> Hamsters { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -27,16 +27,19 @@ namespace AnimalsAPI.Persistence.Contexts
                 new Hamster { Id = 3, Name = "Fluff Bag", Age = 3 }
             );
 
-            modelBuilder.Entity<Movie>().ToTable("Movies");
-            modelBuilder.Entity<Movie>().Property(p => p.Id).IsRequired();
-            modelBuilder.Entity<Movie>().Property(p => p.Name).IsRequired().HasMaxLength(100);
-            modelBuilder.Entity<Movie>().Property(p => p.Year).IsRequired();
+            modelBuilder.Entity<Cat>().ToTable("Cats");
+            modelBuilder.Entity<Cat>().HasKey(p => p.Id);
+            modelBuilder.Entity<Cat>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            modelBuilder.Entity<Cat>().Property(p => p.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Cat>().Property(p => p.Type).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Cat>().Property(p => p.YearOfBirth).IsRequired();
 
-            modelBuilder.Entity<Movie>().HasData
+            modelBuilder.Entity<Cat>().HasData
             (
-                new Movie { Id = 1, Name = "It's a wonderful life", Year = 2000 },
-                new Movie { Id = 2, Name = "A Star is Born", Year = 2001 },
-                new Movie { Id = 3, Name = "Amelie", Year = 2002 }
+                new Cat { Id = 1, Name = "Amber", Type = "Bengal", YearOfBirth = 2000 },
+                new Cat { Id = 2, Name = "Tiddles", Type = "Tabby", YearOfBirth = 2010 },
+                new Cat { Id = 3, Name = "Mr Mestopheles", Type = "Ginger tom", YearOfBirth = 2001 },
+                new Cat { Id = 4, Name = "Spot", Type = "Old moggy", YearOfBirth = 2012 }
             );
         }
     }

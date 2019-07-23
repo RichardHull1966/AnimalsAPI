@@ -36,8 +36,8 @@ namespace AnimalsAPI
             services.AddScoped<IHamsterRepository, HamsterRepository>();
             services.AddScoped<IHamsterService, HamsterService>();
 
-            services.AddScoped<IMovieRepository, MovieRepository>();
-            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<ICatRepository, CatRepository>();
+            services.AddScoped<ICatService, CatService>();
 
             services.AddCors(options =>
             {

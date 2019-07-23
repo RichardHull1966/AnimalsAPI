@@ -9,6 +9,7 @@ namespace Movies.API.Mapping
         public ResourceToModelProfile()
         {
             CreateMap<SaveHamsterResource, Hamster>();
+            CreateMap<SaveCatResource, Cat>();
         }
     }
 }

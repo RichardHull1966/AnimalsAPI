@@ -4,8 +4,9 @@ using AnimalsAPI.Domain.Models;
 
 namespace AnimalsAPI.Domain.Repositories
 {
-    public interface IMovieRepository
+    public interface ICatRepository
     {
-        Task<IEnumerable<Movie>> ListAsync();
+        Task<IEnumerable<Cat>> ListAsync();
+	    Task AddAsync(Cat cat);
     }
 }

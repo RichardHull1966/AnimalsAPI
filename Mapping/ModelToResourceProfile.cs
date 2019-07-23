@@ -9,6 +9,7 @@ namespace AnimalsAPI.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Hamster, HamsterResource>();
+            CreateMap<Cat, CatResource>();
         }
     }
 }
