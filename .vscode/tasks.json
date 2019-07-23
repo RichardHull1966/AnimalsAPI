@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MoviesAPI.csproj"
+                "${workspaceFolder}/AnimalsAPI.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MoviesAPI.csproj"
+                "${workspaceFolder}/AnimalsAPI.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/MoviesAPI.csproj"
+                "${workspaceFolder}/AnimalsAPI.csproj"
             ],
             "problemMatcher": "$tsc"
         }

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Domain.Services;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Domain.Services;
 
-namespace MoviesAPI.Controllers
+namespace AnimalsAPI.Controllers
 
 {
     [Route("api/[controller]")]

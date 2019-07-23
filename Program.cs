@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace MoviesAPI
+namespace AnimalsAPI
 {
     public class Program
     {

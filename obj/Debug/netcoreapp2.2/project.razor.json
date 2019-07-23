@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/richard.hull/Dotnet/MoviesAPI/MoviesAPI.csproj",
+  "FilePath": "/Users/richard.hull/Dotnet/AnimalsAPI/AnimalsAPI.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2940,7 +2940,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "MoviesAPI",
+  "RootNamespace": "AnimalsAPI",
   "Documents": [
     {
       "FilePath": "Views/Home/Index.cshtml",

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Domain.Repositories;
-using MoviesAPI.Domain.Services;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Domain.Repositories;
+using AnimalsAPI.Domain.Services;
 
-namespace MoviesAPI.Services
+namespace AnimalsAPI.Services
 {
     public class MovieService : IMovieService
     {

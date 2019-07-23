@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MoviesAPI.Resources
+namespace AnimalsAPI.Resources
 {
     public class SaveHamsterResource
     {

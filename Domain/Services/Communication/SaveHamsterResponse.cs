@@ -1,6 +1,6 @@
-using MoviesAPI.Domain.Models;
+using AnimalsAPI.Domain.Models;
 
-namespace MoviesAPI.Domain.Services.Communication
+namespace AnimalsAPI.Domain.Services.Communication
 {
     public class SaveHamsterResponse : BaseResponse
     {

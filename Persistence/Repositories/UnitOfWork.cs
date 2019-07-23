@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using MoviesAPI.Domain.Repositories;
-using MoviesAPI.Persistence.Contexts;
+using AnimalsAPI.Domain.Repositories;
+using AnimalsAPI.Persistence.Contexts;
 
-namespace MoviesAPI.Persistence.Repositories
+namespace AnimalsAPI.Persistence.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -1,8 +1,8 @@
 using AutoMapper;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Resources;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Resources;
 
-namespace MoviesAPI.Mapping
+namespace AnimalsAPI.Mapping
 {
     public class ModelToResourceProfile : Profile
     {

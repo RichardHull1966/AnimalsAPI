@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Domain.Repositories;
-using MoviesAPI.Domain.Services;
-using MoviesAPI.Domain.Services.Communication;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Domain.Repositories;
+using AnimalsAPI.Domain.Services;
+using AnimalsAPI.Domain.Services.Communication;
 
-namespace MoviesAPI.Services
+namespace AnimalsAPI.Services
 {
     public class HamsterService : IHamsterService
     {

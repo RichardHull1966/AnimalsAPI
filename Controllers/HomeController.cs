@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MoviesAPI.Controllers
+namespace AnimalsAPI.Controllers
 
 {
     [Route("/")]

@@ -1,4 +1,4 @@
-namespace MoviesAPI.Resources
+namespace AnimalsAPI.Resources
 {
     public class HamsterResource
     {

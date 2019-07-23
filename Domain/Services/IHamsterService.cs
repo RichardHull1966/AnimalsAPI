@@ -1,10 +1,10 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Domain.Services.Communication;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Domain.Services.Communication;
 
-namespace MoviesAPI.Domain.Services
+namespace AnimalsAPI.Domain.Services
 {
     public interface IHamsterService
     {

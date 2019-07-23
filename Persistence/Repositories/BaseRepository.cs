@@ -1,6 +1,6 @@
-﻿using MoviesAPI.Persistence.Contexts;
+﻿using AnimalsAPI.Persistence.Contexts;
 
-namespace MoviesAPI.Persistence.Repositories
+namespace AnimalsAPI.Persistence.Repositories
 {
     public abstract class BaseRepository
     {

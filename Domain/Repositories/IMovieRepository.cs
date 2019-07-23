@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoviesAPI.Domain.Models;
+using AnimalsAPI.Domain.Models;
 
-namespace MoviesAPI.Domain.Repositories
+namespace AnimalsAPI.Domain.Repositories
 {
     public interface IMovieRepository
     {

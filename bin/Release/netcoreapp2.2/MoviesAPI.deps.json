@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "MoviesAPI/1.0.0": {
+      "AnimalsAPI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -30,10 +30,10 @@
           "Microsoft.NETCore.App": "2.2.0"
         },
         "runtime": {
-          "MoviesAPI.dll": {}
+          "AnimalsAPI.dll": {}
         },
         "compile": {
-          "MoviesAPI.dll": {}
+          "AnimalsAPI.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3233,7 +3233,7 @@
     }
   },
   "libraries": {
-    "MoviesAPI/1.0.0": {
+    "AnimalsAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,6 +1,6 @@
 using AutoMapper;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Resources;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Resources;
 
 namespace Movies.API.Mapping
 {

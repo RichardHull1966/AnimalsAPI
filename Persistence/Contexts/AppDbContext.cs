@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MoviesAPI.Domain.Models;
+using AnimalsAPI.Domain.Models;
 
-namespace MoviesAPI.Persistence.Contexts
+namespace AnimalsAPI.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {

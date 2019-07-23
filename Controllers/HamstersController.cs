@@ -2,12 +2,12 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using MoviesAPI.Domain.Models;
-using MoviesAPI.Domain.Services;
-using MoviesAPI.Resources;
-using MoviesAPI.Extensions;
+using AnimalsAPI.Domain.Models;
+using AnimalsAPI.Domain.Services;
+using AnimalsAPI.Resources;
+using AnimalsAPI.Extensions;
 
-namespace MoviesAPI.Controllers
+namespace AnimalsAPI.Controllers
 {
     [Route("/api/[controller]")]
     public class HamstersController : Controller

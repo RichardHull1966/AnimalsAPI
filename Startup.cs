@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using MoviesAPI.Persistence.Contexts;
-using MoviesAPI.Services;
-using MoviesAPI.Persistence.Repositories;
-using MoviesAPI.Domain.Repositories;
-using MoviesAPI.Domain.Services;
+using AnimalsAPI.Persistence.Contexts;
+using AnimalsAPI.Services;
+using AnimalsAPI.Persistence.Repositories;
+using AnimalsAPI.Domain.Repositories;
+using AnimalsAPI.Domain.Services;
 using AutoMapper;
 
-namespace MoviesAPI
+namespace AnimalsAPI
 {
     public class Startup
     {

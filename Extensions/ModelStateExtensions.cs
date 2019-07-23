@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace MoviesAPI.Extensions
+namespace AnimalsAPI.Extensions
 {
     public static class ModelStateExtensions
     {

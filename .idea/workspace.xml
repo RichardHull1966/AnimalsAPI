@@ -5,22 +5,22 @@
       <change afterPath="$PROJECT_DIR$/Domain/Models/Movie.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Domain/Services/IMovieService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/MoviesAPI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MoviesAPI/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/MoviesAPI/xs/project-cache/MoviesAPI-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MoviesAPI/xs/project-cache/MoviesAPI-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/MoviesAPI/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MoviesAPI/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/MoviesAPI/xs/sqlite3/storage.ide-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/MoviesAPI/xs/sqlite3/storage.ide-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/project-cache/AnimalsAPI-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/project-cache/AnimalsAPI-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AnimalsAPI/xs/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MoviesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Movie.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoviesAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MoviesAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalsAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/MoviesDbContext.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/MoviesDbContextExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IMovieServiceExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/MoviesAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/MoviesAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/MoviesAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/MoviesAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/MoviesAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/AnimalsAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/AnimalsAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/AnimalsAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/AnimalsAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/AnimalsAPI.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +63,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="MoviesAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MoviesAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="AnimalsAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalsAPI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />

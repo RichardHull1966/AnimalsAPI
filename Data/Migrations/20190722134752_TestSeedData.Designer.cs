@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MoviesAPI.Persistence.Contexts;
+using AnimalsAPI.Persistence.Contexts;
 
-namespace MoviesAPI.Data.Migrations
+namespace AnimalsAPI.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20190722134752_TestSeedData")]
@@ -20,7 +20,7 @@ namespace MoviesAPI.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MoviesAPI.Domain.Models.Hamster", b =>
+            modelBuilder.Entity("AnimalsAPI.Domain.Models.Hamster", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,7 +57,7 @@ namespace MoviesAPI.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MoviesAPI.Domain.Models.Movie", b =>
+            modelBuilder.Entity("AnimalsAPI.Domain.Models.Movie", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

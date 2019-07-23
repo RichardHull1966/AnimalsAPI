@@ -1,5 +1,5 @@
 
-namespace MoviesAPI.Domain.Services.Communication
+namespace AnimalsAPI.Domain.Services.Communication
 {
     public abstract class BaseResponse
     {

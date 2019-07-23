@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MoviesAPI.Data.Migrations
+namespace AnimalsAPI.Data.Migrations
 {
     public partial class TestSeedData : Migration
     {

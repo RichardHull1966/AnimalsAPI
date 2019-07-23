@@ -12137,11 +12137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/richard.hull/Dotnet/MoviesAPI/MoviesAPI.csproj",
-      "projectName": "MoviesAPI",
-      "projectPath": "/Users/richard.hull/Dotnet/MoviesAPI/MoviesAPI.csproj",
+      "projectUniqueName": "/Users/richard.hull/Dotnet/AnimalsAPI/AnimalsAPI.csproj",
+      "projectName": "AnimalsAPI",
+      "projectPath": "/Users/richard.hull/Dotnet/AnimalsAPI/AnimalsAPI.csproj",
       "packagesPath": "/Users/richard.hull/.nuget/packages/",
-      "outputPath": "/Users/richard.hull/Dotnet/MoviesAPI/obj/",
+      "outputPath": "/Users/richard.hull/Dotnet/AnimalsAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
