@@ -7,5 +7,6 @@ namespace MoviesAPI.Domain.Repositories
     public interface IHamsterRepository
     {
         Task<IEnumerable<Hamster>> ListAsync();
+	    Task AddAsync(Hamster hamster);
     }
 }

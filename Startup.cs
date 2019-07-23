@@ -48,6 +48,7 @@ namespace MoviesAPI
                 });
             });
             services.AddAutoMapper();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
         public void Configure(IApplicationBuilder app,
                 IHostingEnvironment env)

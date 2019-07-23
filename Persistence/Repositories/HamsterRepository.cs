@@ -8,14 +8,18 @@ using MoviesAPI.Persistence.Contexts;
 namespace MoviesAPI.Persistence.Repositories
 {
     public class HamsterRepository : BaseRepository, IHamsterRepository
-    {
-        public HamsterRepository(AppDbContext context) : base(context)
-        {
-        }
+{
+	public HamsterRepository(AppDbContext context) : base(context)
+	{ }
 
-        public async Task<IEnumerable<Hamster>> ListAsync()
-        {
-            return await _context.Hamsters.ToListAsync();
-        }
-    }
+	public async Task<IEnumerable<Hamster>> ListAsync()
+	{
+		return await _context.Hamsters.ToListAsync();
+	}
+
+	public async Task AddAsync(Hamster hamster)
+	{
+		await _context.Hamsters.AddAsync(hamster);
+	}
+}
 }
