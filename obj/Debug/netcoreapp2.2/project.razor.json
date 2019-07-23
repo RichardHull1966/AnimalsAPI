@@ -2947,5 +2947,6 @@
       "TargetPath": "Views/Home/Index.cshtml",
       "FileKind": "mvc"
     }
-  ]
+  ],
+  "SerializationFormat": "0.1"
 }

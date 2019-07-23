@@ -9,6 +9,7 @@ using MoviesAPI.Services;
 using MoviesAPI.Persistence.Repositories;
 using MoviesAPI.Domain.Repositories;
 using MoviesAPI.Domain.Services;
+using AutoMapper;
 
 namespace MoviesAPI
 {
@@ -23,6 +24,7 @@ namespace MoviesAPI
 
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
+        [System.Obsolete]
         public void ConfigureServices(IServiceCollection services)
             {
             services
@@ -45,6 +47,7 @@ namespace MoviesAPI
                     builder.WithOrigins("http://localhost:4200");
                 });
             });
+            services.AddAutoMapper();
         }
         public void Configure(IApplicationBuilder app,
                 IHostingEnvironment env)
