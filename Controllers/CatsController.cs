@@ -46,5 +46,33 @@ namespace AnimalsAPI.Controllers
             var catResource = _mapper.Map<Cat, CatResource>(result.Cat);
             return Ok(catResource);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutAsync(int id, [FromBody] SaveCatResource resource)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState.GetErrorMessages());
+
+            var cat = _mapper.Map<SaveCatResource, Cat>(resource);
+            var result = await _catService.UpdateAsync(id, cat);
+
+            if (!result.Success)
+                return BadRequest(result.Message);
+
+            var catResource = _mapper.Map<Cat, CatResource>(result.Cat);
+            return Ok(catResource);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var result = await _catService.DeleteAsync(id);
+
+            if (!result.Success)
+                return BadRequest(result.Message);
+
+            var catResource = _mapper.Map<Cat, CatResource>(result.Cat);
+            return Ok(catResource);
+        }
     }
 }

@@ -2,11 +2,11 @@ using AnimalsAPI.Domain.Models;
 
 namespace AnimalsAPI.Domain.Services.Communication
 {
-    public class SaveHamsterResponse : BaseResponse
+    public class HamsterResponse : BaseResponse
     {
         public Hamster Hamster { get; private set; }
 
-        private SaveHamsterResponse(bool success, string message, Hamster hamster) : base(success, message)
+        private HamsterResponse(bool success, string message, Hamster hamster) : base(success, message)
         {
             Hamster = hamster;
         }
@@ -16,7 +16,7 @@ namespace AnimalsAPI.Domain.Services.Communication
         /// </summary>
         /// <param name="hamster">Saved hamster.</param>
         /// <returns>Response.</returns>
-        public SaveHamsterResponse(Hamster hamster) : this(true, string.Empty, hamster)
+        public HamsterResponse(Hamster hamster) : this(true, string.Empty, hamster)
         { }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace AnimalsAPI.Domain.Services.Communication
         /// </summary>
         /// <param name="message">Error message.</param>
         /// <returns>Response.</returns>
-        public SaveHamsterResponse(string message) : this(false, message, null)
+        public HamsterResponse(string message) : this(false, message, null)
         { }
     }
 }

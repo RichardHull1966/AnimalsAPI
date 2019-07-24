@@ -24,19 +24,64 @@ namespace AnimalsAPI.Services
             return await _hamsterRepository.ListAsync();
         }
 
-        public async Task<SaveHamsterResponse> SaveAsync(Hamster hamster)
+        public async Task<HamsterResponse> SaveAsync(Hamster hamster)
         {
             try
             {
                 await _hamsterRepository.AddAsync(hamster);
                 await _unitOfWork.CompleteAsync();
-                
-                return new SaveHamsterResponse(hamster);
+
+                return new HamsterResponse(hamster);
             }
             catch (Exception ex)
             {
                 // Do some logging stuff
-                return new SaveHamsterResponse($"An error occurred when saving the hamster: {ex.Message}");
+                return new HamsterResponse($"An error occurred when saving the hamster: {ex.Message}");
+            }
+        }
+
+        public async Task<HamsterResponse> UpdateAsync(int id, Hamster hamster)
+        {
+            var existingHamster = await _hamsterRepository.FindByIdAsync(id);
+
+            if (existingHamster == null)
+                return new HamsterResponse("Hamster not found.");
+
+            existingHamster.Name = hamster.Name;
+            existingHamster.Age = hamster.Age;
+
+            try
+            {
+                _hamsterRepository.Update(existingHamster);
+                await _unitOfWork.CompleteAsync();
+
+                return new HamsterResponse(existingHamster);
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return new HamsterResponse($"An error occurred when updating the hamster: {ex.Message}");
+            }
+        }
+
+        public async Task<HamsterResponse> DeleteAsync(int id)
+        {
+            var existingHamster = await _hamsterRepository.FindByIdAsync(id);
+
+            if (existingHamster == null)
+                return new HamsterResponse("Hamster not found.");
+
+            try
+            {
+                _hamsterRepository.Remove(existingHamster);
+                await _unitOfWork.CompleteAsync();
+
+                return new HamsterResponse(existingHamster);
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return new HamsterResponse($"An error occurred when deleting the hamster: {ex.Message}");
             }
         }
     }

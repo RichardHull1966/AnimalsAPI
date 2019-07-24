@@ -24,19 +24,66 @@ namespace AnimalsAPI.Services
             return await _catRepository.ListAsync();
         }
 
-        public async Task<SaveCatResponse> SaveAsync(Cat cat)
+        public async Task<CatResponse> SaveAsync(Cat cat)
         {
             try
             {
                 await _catRepository.AddAsync(cat);
                 await _unitOfWork.CompleteAsync();
-                
-                return new SaveCatResponse(cat);
+
+                return new CatResponse(cat);
             }
             catch (Exception ex)
             {
                 // Do some logging stuff
-                return new SaveCatResponse($"An error occurred when saving the cat: {ex.Message}");
+                return new CatResponse($"An error occurred when saving the cat: {ex.Message}");
+            }
+        }
+
+
+        public async Task<CatResponse> UpdateAsync(int id, Cat cat)
+        {
+            var existingCat = await _catRepository.FindByIdAsync(id);
+
+            if (existingCat == null)
+                return new CatResponse("Cat not found.");
+
+            existingCat.Name = cat.Name;
+            existingCat.Type = cat.Type;
+            existingCat.YearOfBirth = cat.YearOfBirth;
+
+            try
+            {
+                _catRepository.Update(existingCat);
+                await _unitOfWork.CompleteAsync();
+
+                return new CatResponse(existingCat);
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return new CatResponse($"An error occurred when updating the cat: {ex.Message}");
+            }
+        }
+
+        public async Task<CatResponse> DeleteAsync(int id)
+        {
+            var existingCat = await _catRepository.FindByIdAsync(id);
+
+            if (existingCat == null)
+                return new CatResponse("Cat not found.");
+
+            try
+            {
+                _catRepository.Remove(existingCat);
+                await _unitOfWork.CompleteAsync();
+
+                return new CatResponse(existingCat);
+            }
+            catch (Exception ex)
+            {
+                // Do some logging stuff
+                return new CatResponse($"An error occurred when deleting the cat: {ex.Message}");
             }
         }
     }

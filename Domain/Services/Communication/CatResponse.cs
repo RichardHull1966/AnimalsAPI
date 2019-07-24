@@ -2,11 +2,11 @@ using AnimalsAPI.Domain.Models;
 
 namespace AnimalsAPI.Domain.Services.Communication
 {
-    public class SaveCatResponse : BaseResponse
+    public class CatResponse : BaseResponse
     {
         public Cat Cat { get; private set; }
 
-        private SaveCatResponse(bool success, string message, Cat cat) : base(success, message)
+        private CatResponse(bool success, string message, Cat cat) : base(success, message)
         {
             Cat = cat;
         }
@@ -16,7 +16,7 @@ namespace AnimalsAPI.Domain.Services.Communication
         /// </summary>
         /// <param name="cat">Saved cat.</param>
         /// <returns>Response.</returns>
-        public SaveCatResponse(Cat cat) : this(true, string.Empty, cat)
+        public CatResponse(Cat cat) : this(true, string.Empty, cat)
         { }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace AnimalsAPI.Domain.Services.Communication
         /// </summary>
         /// <param name="message">Error message.</param>
         /// <returns>Response.</returns>
-        public SaveCatResponse(string message) : this(false, message, null)
+        public CatResponse(string message) : this(false, message, null)
         { }
     }
 }

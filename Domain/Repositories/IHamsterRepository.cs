@@ -8,5 +8,8 @@ namespace AnimalsAPI.Domain.Repositories
     {
         Task<IEnumerable<Hamster>> ListAsync();
 	    Task AddAsync(Hamster hamster);
+        Task<Hamster> FindByIdAsync(int id);
+	    void Update(Hamster hamster);
+        void Remove(Hamster hamster);
     }
 }
