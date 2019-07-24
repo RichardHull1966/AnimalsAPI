@@ -44,7 +44,8 @@ namespace AnimalsAPI
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost:4200");
+                    builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyMethod();
                 });
             });
             services.AddAutoMapper();

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AnimalsAPI.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190723125916_TestSeedData")]
+    [Migration("20190724125827_TestSeedData")]
     partial class TestSeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
