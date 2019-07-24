@@ -30,6 +30,18 @@ namespace AnimalsAPI.Controllers
             return resources;
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAsync(int id)
+        {
+            var result = await _hamsterService.GetAsync(id);
+
+            if (!result.Success)
+                return BadRequest(result.Message);
+
+            var hamsterResource = _mapper.Map<Hamster, HamsterResource>(result.Hamster);
+            return Ok(hamsterResource);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveHamsterResource resource)

@@ -24,6 +24,14 @@ namespace AnimalsAPI.Services
             return await _hamsterRepository.ListAsync();
         }
 
+        public async Task<HamsterResponse> GetAsync(int id){
+            var hamster = await _hamsterRepository.FindByIdAsync(id);
+            if (hamster == null)
+                return new HamsterResponse("Hamster not found.");
+
+            return new HamsterResponse(hamster);
+        }
+
         public async Task<HamsterResponse> SaveAsync(Hamster hamster)
         {
             try

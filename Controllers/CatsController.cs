@@ -30,6 +30,18 @@ namespace AnimalsAPI.Controllers
             return resources;
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAsync(int id)
+        {
+            var result = await _catService.GetAsync(id);
+
+            if (!result.Success)
+                return BadRequest(result.Message);
+
+            var catResource = _mapper.Map<Cat, CatResource>(result.Cat);
+            return Ok(catResource);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveCatResource resource)

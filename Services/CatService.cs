@@ -24,6 +24,14 @@ namespace AnimalsAPI.Services
             return await _catRepository.ListAsync();
         }
 
+        public async Task<CatResponse> GetAsync(int id){
+            var cat = await _catRepository.FindByIdAsync(id);
+            if (cat == null)
+                return new CatResponse("Cat not found.");
+
+            return new CatResponse(cat);
+        }
+
         public async Task<CatResponse> SaveAsync(Cat cat)
         {
             try
@@ -39,7 +47,6 @@ namespace AnimalsAPI.Services
                 return new CatResponse($"An error occurred when saving the cat: {ex.Message}");
             }
         }
-
 
         public async Task<CatResponse> UpdateAsync(int id, Cat cat)
         {
